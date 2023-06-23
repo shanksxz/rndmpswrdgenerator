@@ -29,3 +29,9 @@ Your generated password is: aXK$eOT!Ml&G
 3. Run the program.
 4. Follow the prompts to select your desired password options.
 5. Once you've made your selections, the program will generate a random password for you.
+
+
+
+## Overview
+
+!(./images/demo.png)
