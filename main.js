@@ -19,6 +19,7 @@ const numberscheck = document.getElementById("numbers");
 const symbolscheck = document.getElementById("symbols");
 const generatepassword = document.getElementById("generate");
 const allCheckBox = document.querySelectorAll("input[type=checkbox]");
+const copy = document.querySelector("[data-copy]");
 const symbols = '~`!@#$%^&*()_-+={[}]|:;"<,>.?/';
 
 
@@ -76,8 +77,35 @@ leninput.addEventListener('input', (e) => {
     passwordlength = e.target.value;
 });
 
+async function copyContent() {
+    try {
+        await navigator.clipboard.writeText(passworddisplay.value);
+        // copyMsg.innerText = "copied";
+        console.log("copied");
+    }
+    catch(e) {
+        // copyMsg.innerText = "Failed";
+        console.log("failed");
+
+
+    }
+}
+
+
+copy.addEventListener("click", () => {
+    if(passworddisplay.value) {
+        copyContent();
+    }
+})
+
+
+
 
 generate.addEventListener('click', () => {
+
+    if(passworddisplay.value) {
+        copyContent();
+    }
 
     if(checkcount == 0) 
         return;
@@ -111,4 +139,7 @@ generate.addEventListener('click', () => {
     password = shufflePassword(Array.from(password));
     passworddisplay.value = password;
 });
+
+
+
 

@@ -17,6 +17,9 @@
 
             <div class="head">
                 <h1 class="hd1">Password Generator</h1>
+                <button id="copy" data-copy>
+                    <img  src="copy__1_-removebg-preview.png" height="50px" width="50px" alt="">
+                </button>
             </div>
 
             <div class="inputbox">
@@ -27,7 +30,7 @@
                 <p>LENGTH: <span id="lengthvalue">0</span></p>
                 <div class="selector">
                     4
-                    <input type="range" min="4" max="32" step="1" id="lengthinput"/>
+                    <input type="range" min="4" max="32" step="1" id="lengthinput" />
                     32
                 </div>
             </div>
@@ -39,36 +42,44 @@
                     <label class="container">
                         <input type="checkbox" id="uppercase">
                         <svg viewBox="0 0 64 64" height="2em" width="2em">
-                          <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+                            <path
+                                d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
+                                pathLength="575.0541381835938" class="path"></path>
                         </svg>
-                      </label>
+                    </label>
                 </div>
                 <div class="includebox">
                     <p>Include Lowercase</p>
                     <label class="container">
                         <input type="checkbox" id="lowercase">
                         <svg viewBox="0 0 64 64" height="2em" width="2em">
-                          <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+                            <path
+                                d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
+                                pathLength="575.0541381835938" class="path"></path>
                         </svg>
-                      </label>
+                    </label>
                 </div>
                 <div class="includebox">
                     <p>Include Numbers</p>
                     <label class="container">
                         <input type="checkbox" id="numbers">
                         <svg viewBox="0 0 64 64" height="2em" width="2em">
-                          <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+                            <path
+                                d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
+                                pathLength="575.0541381835938" class="path"></path>
                         </svg>
-                      </label>
+                    </label>
                 </div>
                 <div class="includebox">
                     <p>Include Symbols</p>
                     <label class="container">
                         <input type="checkbox" id="symbols">
                         <svg viewBox="0 0 64 64" height="2em" width="2em">
-                          <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+                            <path
+                                d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
+                                pathLength="575.0541381835938" class="path"></path>
                         </svg>
-                      </label>
+                    </label>
                 </div>
             </div>
 
