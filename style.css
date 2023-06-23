@@ -12,6 +12,11 @@
 }
 
 
+body {
+    background-color: #060719;
+}
+
+
 .mainwrapper {
     height: 100vh;
     display: flex;
@@ -34,6 +39,14 @@
 
 
 /* .inputbox {} */
+
+
+input[type="range"] {
+    accent-color: #7b4bb1;
+}
+
+
+
 
 .todisplay {
     color: aliceblue;
@@ -137,6 +150,10 @@ img:hover {
     stroke-dasharray: 70.5096664428711 9999999;
     stroke-dashoffset: -262.2723388671875;
   }
+
+  input[type="checkbox"] {
+    accent-color: #7b4bb1;
+}
 
 
 @media screen and (max-width:520px) {
