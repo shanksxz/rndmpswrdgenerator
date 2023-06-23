@@ -1,12 +1,18 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+
 * {
     margin: 0;
     padding: 0;
     scroll-behavior: auto;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 
-.container {
+.mainwrapper {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -14,8 +20,102 @@
 }
 
 .wrapper {
-    background-color: black;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #0a0c33;
     color: white;
-    height: 500px;
+    height: 800px;
     width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
+
+
+/* .inputbox {} */
+
+.todisplay {
+    width: 100%;
+    height: 75px;
+    background-color: #1d2043;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+
+
+.selector {
+    padding: 5%;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    border-radius: 10px;
+    background-color: #1d2043;
+}
+
+#lengthinput {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.includebox {
+    padding: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    height: 75px;
+    background-color: #1d2043;
+}
+
+.generate {
+    width: 100%;
+    height: 75px;
+    background-color: #1d2043;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg, #6579e7, 
+    #8259b1);
+    font-size: large;
+}
+
+
+/* for checkbox */
+.container {
+    cursor: pointer;
+  }
+  
+  .container input {
+    display: none;
+  }
+  
+  .container svg {
+    overflow: visible;
+  }
+  
+  .path {
+    fill: none;
+    stroke: white;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+    stroke-dasharray: 241 9999999;
+    stroke-dashoffset: 0;
+  }
+  
+  .container input:checked ~ svg .path {
+    stroke-dasharray: 70.5096664428711 9999999;
+    stroke-dashoffset: -262.2723388671875;
+  }
+  
