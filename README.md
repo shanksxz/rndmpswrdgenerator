@@ -13,13 +13,13 @@ This is a simple random password generator program that allows you to generate s
 ## Example
 Here's an example of how the program works:
 
-Desired length of your password: 12
-Do you want to include uppercase letters? : ✔️ Y
-Do you want to include lowercase letters? : ✔️ Y
-Do you want to include numbers? : checkbox N
-Do you want to include symbols? : ✔️ Y
+-Desired length of your password: 12
+-Do you want to include uppercase letters? : ✔️ Y
+-Do you want to include lowercase letters? : ✔️ Y
+-Do you want to include numbers? : checkbox N
+-Do you want to include symbols? : ✔️ Y
 
-Your generated password is: aXK$eOT!Ml&G
+-Your generated password is: aXK$eOT!Ml&G
 
 
 ## Usage
