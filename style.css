@@ -20,6 +20,7 @@
 }
 
 .wrapper {
+    max-width: 95%;
     padding: 40px;
     border-radius: 15px;
     background-color: #0a0c33;
@@ -118,4 +119,23 @@
     stroke-dasharray: 70.5096664428711 9999999;
     stroke-dashoffset: -262.2723388671875;
   }
-  
+
+
+@media screen and (max-width:520px) {
+    h1 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .generate {
+        font-size: 0.9em;
+    }
+
+    .todisplay {
+        font-size: 0.9em;
+
+    }
+}  
