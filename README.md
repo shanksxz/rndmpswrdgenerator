@@ -34,4 +34,4 @@ Your generated password is: aXK$eOT!Ml&G
 
 ## Overview
 
-!(./images/demo.png)
+!(/images/demo.png)
