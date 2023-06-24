@@ -1,7 +1,7 @@
 # Random Password Generator
 
 This is a simple random password generator program that allows you to generate secure passwords with customizable options. You can choose to include uppercase and lowercase letters, numbers, and symbols in your generated passwords.
-View HEre - ![](https://somyabhattcu1.github.io/RndmPswrdGenerator/)
+- View Here - ![](https://somyabhattcu1.github.io/RndmPswrdGenerator/)
 
 ## Features
 - Choose password length: Specify the desired length of the generated password.
