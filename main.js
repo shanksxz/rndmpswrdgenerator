@@ -103,9 +103,6 @@ copy.addEventListener("click", () => {
 
 generate.addEventListener('click', () => {
 
-    if(passworddisplay.value) {
-        copyContent();
-    }
 
     if(checkcount == 0) 
         return;
